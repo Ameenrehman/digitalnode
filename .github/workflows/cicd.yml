@@ -28,6 +28,9 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
           image: ameen2607/node-digital
+          registry: docker.io
+          username: ameen2607
+          password: dragonball.999
 
      
      
