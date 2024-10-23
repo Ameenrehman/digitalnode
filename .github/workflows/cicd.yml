@@ -25,7 +25,7 @@ jobs:
     needs: build
     steps:
       - name: checkout
-        uses: actions/checkout
+        uses: actions/checkout@v4
       - name: setup buildx
         uses: actions/setup-buildx-action@v3
       - name: login to docker-push
