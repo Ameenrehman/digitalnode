@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-digital-deployment
+  labels:
+    app: app-digital-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-digital
+  template:
+    metadata:
+      labels:
+        app: app-digital
+    spec:
+      containers:
+      - name: app-digital
+        image: ameen2607/node-digital
+        ports:
+        - containerPort: 3000
