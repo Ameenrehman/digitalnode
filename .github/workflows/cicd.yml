@@ -31,8 +31,8 @@ jobs:
       - name: login to docker-push
         uses: actions/login-action@v3
         with: 
-          username: {{ secrets.username }}
-          password: {{ secrets.password}}
+          username: ameen2607
+          password: dragonball.999
 
       - name: build and push
         uses: actions/build-push-action@v6
@@ -40,7 +40,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.username}}/node-digital:${{github.run_id}}
+          tags: ameen2607/node-digital:${{github.run_id}}
 
 
       
