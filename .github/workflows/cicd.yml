@@ -20,7 +20,7 @@ jobs:
     - name: install dependencies
       run: npm install
   
-  docker-push:
+  docker-pushh:
     runs-on: ubuntu-latest
     needs: build
     steps:
